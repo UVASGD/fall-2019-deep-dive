@@ -361,7 +361,7 @@ public class MissileGolem : MonoBehaviour
     {
         takingDamage.PlayRandomSound();
 
-        m_CurrentHealth -= damager.damage;
+        m_CurrentHealth -= (int)damager.damage;
         healthSlider.value = m_CurrentHealth;
     }
 

@@ -21,7 +21,7 @@ namespace Gamekit2D
 
             yield return null;
             
-            m_HealthIconAnimators = new Animator[representedDamageable.startingHealth];
+            m_HealthIconAnimators = new Animator[(int)representedDamageable.startingHealth];
 
             for (int i = 0; i < representedDamageable.startingHealth; i++)
             {

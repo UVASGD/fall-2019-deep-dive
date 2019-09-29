@@ -15,10 +15,10 @@ namespace Gamekit2D
         { }
 
         [Serializable]
-        public class HealEvent : UnityEvent<int, Damageable>
+        public class HealEvent : UnityEvent<float, Damageable>
         { }
 
-        public int startingHealth = 5;
+        public float startingHealth = 100;
         public bool invulnerableAfterDamage = true;
         public float invulnerabilityDuration = 3f;
         public bool disableOnDeath = false;
@@ -33,11 +33,11 @@ namespace Gamekit2D
 
         protected bool m_Invulnerable;
         protected float m_InulnerabilityTimer;
-        protected int m_CurrentHealth;
+        protected float m_CurrentHealth;
         protected Vector2 m_DamageDirection;
         protected bool m_ResetHealthOnSceneReload;
 
-        public int CurrentHealth
+        public float CurrentHealth
         {
             get { return m_CurrentHealth; }
         }
@@ -111,9 +111,11 @@ namespace Gamekit2D
                 EnableInvulnerability();
                 if (disableOnDeath) gameObject.SetActive(false);
             }
+
+            Debug.Log("" + CurrentHealth);
         }
 
-        public void GainHealth(int amount)
+        public void GainHealth(float amount)
         {
             m_CurrentHealth += amount;
 
@@ -125,7 +127,7 @@ namespace Gamekit2D
             OnGainHealth.Invoke(amount, this);
         }
 
-        public void SetHealth(int amount)
+        public void SetHealth(float amount)
         {
             m_CurrentHealth = amount;
 
@@ -153,12 +155,12 @@ namespace Gamekit2D
 
         public Data SaveData()
         {
-            return new Data<int, bool>(CurrentHealth, m_ResetHealthOnSceneReload);
+            return new Data<float, bool>(CurrentHealth, m_ResetHealthOnSceneReload);
         }
 
         public void LoadData(Data data)
         {
-            Data<int, bool> healthData = (Data<int, bool>)data;
+            Data<float, bool> healthData = (Data<float, bool>)data;
             m_CurrentHealth = healthData.value1 ? startingHealth : healthData.value0;
             OnHealthSet.Invoke(this);
         }
