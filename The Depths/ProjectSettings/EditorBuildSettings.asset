@@ -39,6 +39,6 @@ EditorBuildSettings:
     path: 
     guid: 270072cfc180a47179cff49edea38e4c
   - enabled: 1
-    path: Assets/2DGamekit/Scenes/Level 0.unity
+    path: Assets/Scenes/Level 0.unity
     guid: 48d95d140a7f8e5488434cc84246f13c
   m_configObjects: {}
