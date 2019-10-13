@@ -39,12 +39,15 @@ EditorBuildSettings:
     path: 
     guid: 270072cfc180a47179cff49edea38e4c
   - enabled: 1
-    path: Assets/Scenes/Level 0.unity
+    path: Assets/Scenes/Forest.unity
     guid: 48d95d140a7f8e5488434cc84246f13c
   - enabled: 1
-    path: Assets/__DELETED_GUID_Trash/026b184e5c02477429e140cf0b96ea37
+    path: 
     guid: 026b184e5c02477429e140cf0b96ea37
   - enabled: 1
-    path: Assets/Scenes/Layer 0 Cave.unity
+    path: Assets/Scenes/Cave.unity
     guid: a491811cb9b5dd749bc71e1eaf6b7571
+  - enabled: 1
+    path: Assets/Scenes/Hub.unity
+    guid: 2599f644d66c7d14ea5b067227258b8f
   m_configObjects: {}
