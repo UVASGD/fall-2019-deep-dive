@@ -88,6 +88,8 @@ namespace Gamekit2D
         protected float m_VerticalCameraOffsetTimer;
         protected InventoryController m_InventoryController;
 
+        protected bool m_crouch_pushed;
+
         protected Checkpoint m_LastCheckpoint = null;
         protected Vector2 m_StartingPosition = Vector2.zero;
         protected bool m_StartingFacingLeft = false;
@@ -429,7 +431,9 @@ namespace Gamekit2D
 
         public void CheckForCrouching()
         {
-            m_Animator.SetBool(m_HashCrouchingPara, PlayerInput.Instance.Vertical.Value < 0f);
+            bool crouch = PlayerInput.Instance.Vertical.Value < 0f || (m_crouch_pushed && (Physics2D.Raycast(transform.position, Vector2.up, m_CharacterController2D.ContactFilter, new RaycastHit2D[1], m_Capsule.size.y * 1.5f) > 0));
+            m_crouch_pushed = PlayerInput.Instance.Vertical.Value < 0f || crouch;
+            m_Animator.SetBool(m_HashCrouchingPara, crouch);
         }
 
         public bool CheckForGrounded()
