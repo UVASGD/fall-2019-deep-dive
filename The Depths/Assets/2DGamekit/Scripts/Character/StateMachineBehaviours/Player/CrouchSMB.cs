@@ -18,7 +18,7 @@ namespace Gamekit2D
             if(m_MonoBehaviour.CheckForFallInput())
                 m_MonoBehaviour.MakePlatformFallthrough ();
             m_MonoBehaviour.GroundedVerticalMovement ();
-            m_MonoBehaviour.GroundedHorizontalMovement (false);
+            m_MonoBehaviour.GroundedHorizontalMovement (true);
         }
     }
 }
