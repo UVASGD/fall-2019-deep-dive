@@ -18,7 +18,7 @@ namespace Gamekit2D
         public InputButton Interact = new InputButton(KeyCode.E, XboxControllerButtons.Y);
         public InputButton MeleeAttack = new InputButton(KeyCode.Z, XboxControllerButtons.X);
         public InputButton RangedAttack = new InputButton(KeyCode.X, XboxControllerButtons.B);
-        public InputButton Jump = new InputButton(KeyCode.Space, XboxControllerButtons.A);
+        public InputButton Jump = new InputButton(KeyCode.UpArrow, XboxControllerButtons.A);
         public InputAxis Horizontal = new InputAxis(KeyCode.RightArrow, KeyCode.LeftArrow, XboxControllerAxes.LeftstickHorizontal);
         public InputAxis Vertical = new InputAxis(KeyCode.UpArrow, KeyCode.DownArrow, XboxControllerAxes.LeftstickVertical);
         [HideInInspector]
