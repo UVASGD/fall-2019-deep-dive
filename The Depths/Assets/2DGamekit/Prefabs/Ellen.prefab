@@ -342,11 +342,11 @@ MonoBehaviour:
     controllerButton: 4
     m_Enabled: 1
   MeleeAttack:
-    key: 107
+    key: 122
     controllerButton: 3
     m_Enabled: 0
   RangedAttack:
-    key: 111
+    key: 120
     controllerButton: 10
     m_Enabled: 0
   Jump:
@@ -354,12 +354,12 @@ MonoBehaviour:
     controllerButton: 1
     m_Enabled: 1
   Horizontal:
-    positive: 100
-    negative: 97
+    positive: 275
+    negative: 276
     controllerAxis: 1
   Vertical:
-    positive: 119
-    negative: 115
+    positive: 273
+    negative: 274
     controllerAxis: 2
   dataSettings:
     dataTag: PlayerInput

@@ -157,10 +157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is some dialogue, it''s pretty interesting dialogue, as you can see.
-    And lo, there is YET MORE DIALOGUE!
-
-    Now I''m done.'
+  m_text: This is water
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c1f115f2c9b80b4cabb22cae230db1c, type: 2}
   m_sharedMaterial: {fileID: 21498813622556604, guid: 4c1f115f2c9b80b4cabb22cae230db1c,

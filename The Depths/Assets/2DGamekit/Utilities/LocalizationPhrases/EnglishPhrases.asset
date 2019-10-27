@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14,9 +15,7 @@ MonoBehaviour:
   language: English
   phrases:
   - key: INFOPOST1
-    value: "\u201CHello? Is anyone else here? Better keep moving or I\u2019ll be talking
-      to myself for the whole trip. Let\u2019s use A and D for left and right, SPACE
-      to jump and err\u2026 how about S to crouch?\u201D"
+    value: This is water
   - key: INFOPOST2
     value: "\u201CWeird, it feels spongy and strange underfoot. What happens if we
       try S and SPACE at the same time?\u201D "
