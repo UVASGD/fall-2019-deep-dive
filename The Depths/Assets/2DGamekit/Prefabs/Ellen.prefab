@@ -344,13 +344,13 @@ MonoBehaviour:
   MeleeAttack:
     key: 122
     controllerButton: 3
-    m_Enabled: 0
+    m_Enabled: 1
   RangedAttack:
     key: 120
     controllerButton: 10
-    m_Enabled: 0
+    m_Enabled: 1
   Jump:
-    key: 32
+    key: 273
     controllerButton: 1
     m_Enabled: 1
   Horizontal:
