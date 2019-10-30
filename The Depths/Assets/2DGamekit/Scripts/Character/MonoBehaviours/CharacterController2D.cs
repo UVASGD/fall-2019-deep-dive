@@ -57,6 +57,10 @@ namespace Gamekit2D
 
             CheckCapsuleEndCollisions();
             CheckCapsuleEndCollisions(false);
+
+			if (PlayerInput.Instance.Dlash.Down) {
+				print("SDSAFAS");
+			}
         }
 
         /// <summary>

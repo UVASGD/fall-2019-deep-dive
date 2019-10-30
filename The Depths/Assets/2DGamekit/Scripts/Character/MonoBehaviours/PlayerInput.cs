@@ -21,7 +21,10 @@ namespace Gamekit2D
         public InputButton Jump = new InputButton(KeyCode.UpArrow, XboxControllerButtons.A);
         public InputAxis Horizontal = new InputAxis(KeyCode.RightArrow, KeyCode.LeftArrow, XboxControllerAxes.LeftstickHorizontal);
         public InputAxis Vertical = new InputAxis(KeyCode.UpArrow, KeyCode.DownArrow, XboxControllerAxes.LeftstickVertical);
-        [HideInInspector]
+		public InputButton Dash = new InputButton(KeyCode.LeftShift, XboxControllerButtons.LeftBumper);
+		public InputButton Dlash = new InputButton(KeyCode.T, XboxControllerButtons.LeftBumper);
+
+		[HideInInspector]
         public DataSettings dataSettings;
 
         protected bool m_HaveControl = true;
@@ -62,6 +65,7 @@ namespace Gamekit2D
             Jump.Get(fixedUpdateHappened, inputType);
             Horizontal.Get(inputType);
             Vertical.Get(inputType);
+			Dash.Get(fixedUpdateHappened, inputType);
 
             if (Input.GetKeyDown(KeyCode.F12))
             {
@@ -80,6 +84,7 @@ namespace Gamekit2D
             GainControl(Jump);
             GainControl(Horizontal);
             GainControl(Vertical);
+			GainControl(Dash);
         }
 
         public override void ReleaseControl(bool resetValues = true)
@@ -93,6 +98,7 @@ namespace Gamekit2D
             ReleaseControl(Jump, resetValues);
             ReleaseControl(Horizontal, resetValues);
             ReleaseControl(Vertical, resetValues);
+			ReleaseControl(Dash, resetValues);
         }
 
         public void DisableMeleeAttacking()
@@ -115,7 +121,18 @@ namespace Gamekit2D
             RangedAttack.Enable();
         }
 
-        public DataSettings GetDataSettings()
+		public void DisableDashing()
+		{
+			print("Dashing disabled!");
+			Dash.Disable();
+		}
+
+		public void EnableDashing () {
+			print("Dashing enabled");
+			Dash.Enable();
+		}
+
+		public DataSettings GetDataSettings()
         {
             return dataSettings;
         }

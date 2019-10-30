@@ -181,7 +181,7 @@ namespace Gamekit2D
 
         void Update()
         {
-            if (PlayerInput.Instance.Pause.Down)
+			if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
                 {
@@ -455,6 +455,10 @@ namespace Gamekit2D
 
             m_Animator.SetBool(m_HashGroundedPara, grounded);
 
+			if (grounded) {
+				PlayerInput.Instance.EnableDashing();
+			}
+
             return grounded;
         }
 
@@ -541,6 +545,11 @@ namespace Gamekit2D
                 m_MoveVector.y -= jumpAbortSpeedReduction * Time.deltaTime;
             }
         }
+
+		//public void UpdateDash()
+		//{
+		//	if (PlayerInput)
+		//}
 
         public void AirborneHorizontalMovement()
         {
@@ -744,6 +753,25 @@ namespace Gamekit2D
         {
             return PlayerInput.Instance.MeleeAttack.Down;
         }
+
+		public bool CheckForDashInput()
+		{
+			//if (PlayerInput.Instance.Dash.Down) {
+				//print("ITS FACKIN RAW");
+			//}
+			return PlayerInput.Instance.Dash.Down;
+		}
+
+		public void Dash(bool useInput, float speedScale = 1f)
+		{
+			print("DASHU");
+			float desiredSpeed = useInput ? PlayerInput.Instance.Horizontal.Value * maxSpeed * speedScale : 0f;
+			float acceleration = useInput && PlayerInput.Instance.Horizontal.ReceivingInput ? groundAcceleration : groundDeceleration;
+			desiredSpeed *= 5f;
+			acceleration *= 100f;
+			m_MoveVector.x = Mathf.MoveTowards(m_MoveVector.x, desiredSpeed, acceleration * Time.deltaTime);
+			PlayerInput.Instance.DisableDashing();
+		}
 
         public void MeleeAttack()
         {
