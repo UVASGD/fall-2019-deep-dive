@@ -99,8 +99,9 @@ namespace Gamekit2D
         protected readonly int m_HashHorizontalSpeedPara = Animator.StringToHash("HorizontalSpeed");
         protected readonly int m_HashVerticalSpeedPara = Animator.StringToHash("VerticalSpeed");
         protected readonly int m_HashGroundedPara = Animator.StringToHash("Grounded");
-        protected readonly int m_HashCrouchingPara = Animator.StringToHash("Crouching");
-        protected readonly int m_HashPushingPara = Animator.StringToHash("Pushing");
+		protected readonly int m_HashDashingPara = Animator.StringToHash("Dashing");
+		protected readonly int m_HashCrouchingPara = Animator.StringToHash("Crouching");
+		protected readonly int m_HashPushingPara = Animator.StringToHash("Pushing");
         protected readonly int m_HashTimeoutPara = Animator.StringToHash("Timeout");
         protected readonly int m_HashRespawnPara = Animator.StringToHash("Respawn");
         protected readonly int m_HashDeadPara = Animator.StringToHash("Dead");
@@ -108,6 +109,7 @@ namespace Gamekit2D
         protected readonly int m_HashForcedRespawnPara = Animator.StringToHash("ForcedRespawn");
         protected readonly int m_HashMeleeAttackPara = Animator.StringToHash("MeleeAttack");
         protected readonly int m_HashHoldingGunPara = Animator.StringToHash("HoldingGun");
+		
 
         protected const float k_MinHurtJumpAngle = 0.001f;
         protected const float k_MaxHurtJumpAngle = 89.999f;
@@ -756,10 +758,13 @@ namespace Gamekit2D
 
 		public bool CheckForDashInput()
 		{
-			//if (PlayerInput.Instance.Dash.Down) {
-				//print("ITS FACKIN RAW");
-			//}
-			return PlayerInput.Instance.Dash.Down;
+			//if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dashing")) return false;
+			bool dashing = PlayerInput.Instance.Dash.Down;
+			//print("Dashing: " + dashing);
+			if (dashing) {
+				m_Animator.SetTrigger(m_HashDashingPara);
+			}
+			return dashing;
 		}
 
 		public void Dash(bool useInput, float speedScale = 1f)

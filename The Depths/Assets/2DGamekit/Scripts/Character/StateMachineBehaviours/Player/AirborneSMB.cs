@@ -22,8 +22,7 @@ namespace Gamekit2D
                 m_MonoBehaviour.MeleeAttack ();
             m_MonoBehaviour.CheckAndFireGun ();
             m_MonoBehaviour.CheckForCrouching ();
-			//m_MonoBehaviour.UpdateDash();
-
+			m_MonoBehaviour.CheckForDashInput();
 		}
     }
 }

@@ -123,12 +123,11 @@ namespace Gamekit2D
 
 		public void DisableDashing()
 		{
-			print("Dashing disabled!");
 			Dash.Disable();
 		}
 
-		public void EnableDashing () {
-			print("Dashing enabled");
+		public void EnableDashing ()
+		{
 			Dash.Enable();
 		}
 

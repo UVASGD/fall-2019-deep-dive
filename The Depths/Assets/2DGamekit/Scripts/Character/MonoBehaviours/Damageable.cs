@@ -112,7 +112,7 @@ namespace Gamekit2D
                 if (disableOnDeath) gameObject.SetActive(false);
             }
 
-            Debug.Log("" + CurrentHealth);
+            //Debug.Log("" + CurrentHealth);
         }
 
         public void GainHealth(float amount)
