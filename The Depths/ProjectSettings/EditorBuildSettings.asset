@@ -29,25 +29,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2DGamekit/Scenes/UI/Loading.unity
     guid: ebc4647ff02971c4ba1b207af066be4d
-  - enabled: 1
+  - enabled: 0
     path: 
-    guid: 240ec9824a41a4ecb8ccdf3507d1adc0
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: 
-    guid: beaba465fcff4439795f30ae75d58f6e
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: 
-    guid: 270072cfc180a47179cff49edea38e4c
-  - enabled: 1
-    path: Assets/Scenes/Forest.unity
-    guid: 48d95d140a7f8e5488434cc84246f13c
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: 
-    guid: 026b184e5c02477429e140cf0b96ea37
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: a491811cb9b5dd749bc71e1eaf6b7571
   - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: 2599f644d66c7d14ea5b067227258b8f
+  - enabled: 1
+    path: Assets/Scenes/Forest2.unity
+    guid: 94783255033308b448dc6ea38453c252
+  - enabled: 1
+    path: Assets/Scenes/Boss.unity
+    guid: 10892db0198433943ae605f15f2f8ad5
   m_configObjects: {}
