@@ -10,14 +10,19 @@ namespace Gamekit2D
         {
             m_MonoBehaviour.UpdateFacing();
             m_MonoBehaviour.UpdateJump();
-            m_MonoBehaviour.AirborneHorizontalMovement();
-            m_MonoBehaviour.AirborneVerticalMovement();
+			if (m_MonoBehaviour.CheckForDashInput()) {
+				m_MonoBehaviour.Dash(true);
+			} else {
+				m_MonoBehaviour.GroundedHorizontalMovement(true);
+			}
+			m_MonoBehaviour.AirborneVerticalMovement();
             m_MonoBehaviour.CheckForGrounded();
             m_MonoBehaviour.CheckForHoldingGun();
             if(m_MonoBehaviour.CheckForMeleeAttackInput())
                 m_MonoBehaviour.MeleeAttack ();
             m_MonoBehaviour.CheckAndFireGun ();
             m_MonoBehaviour.CheckForCrouching ();
-        }
+			m_MonoBehaviour.CheckForDashInput();
+		}
     }
 }

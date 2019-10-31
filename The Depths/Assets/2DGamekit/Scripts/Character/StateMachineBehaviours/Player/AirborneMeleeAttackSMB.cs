@@ -24,6 +24,7 @@ namespace Gamekit2D
             m_MonoBehaviour.AirborneHorizontalMovement();
             m_MonoBehaviour.AirborneVerticalMovement();
             m_MonoBehaviour.CheckForGrounded();
+			m_MonoBehaviour.CheckForDashInput();
         }
 
         public override void OnSLStateExit (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

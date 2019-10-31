@@ -99,8 +99,9 @@ namespace Gamekit2D
         protected readonly int m_HashHorizontalSpeedPara = Animator.StringToHash("HorizontalSpeed");
         protected readonly int m_HashVerticalSpeedPara = Animator.StringToHash("VerticalSpeed");
         protected readonly int m_HashGroundedPara = Animator.StringToHash("Grounded");
-        protected readonly int m_HashCrouchingPara = Animator.StringToHash("Crouching");
-        protected readonly int m_HashPushingPara = Animator.StringToHash("Pushing");
+		protected readonly int m_HashDashingPara = Animator.StringToHash("Dashing");
+		protected readonly int m_HashCrouchingPara = Animator.StringToHash("Crouching");
+		protected readonly int m_HashPushingPara = Animator.StringToHash("Pushing");
         protected readonly int m_HashTimeoutPara = Animator.StringToHash("Timeout");
         protected readonly int m_HashRespawnPara = Animator.StringToHash("Respawn");
         protected readonly int m_HashDeadPara = Animator.StringToHash("Dead");
@@ -108,6 +109,7 @@ namespace Gamekit2D
         protected readonly int m_HashForcedRespawnPara = Animator.StringToHash("ForcedRespawn");
         protected readonly int m_HashMeleeAttackPara = Animator.StringToHash("MeleeAttack");
         protected readonly int m_HashHoldingGunPara = Animator.StringToHash("HoldingGun");
+		
 
         protected const float k_MinHurtJumpAngle = 0.001f;
         protected const float k_MaxHurtJumpAngle = 89.999f;
@@ -181,7 +183,7 @@ namespace Gamekit2D
 
         void Update()
         {
-            if (PlayerInput.Instance.Pause.Down)
+			if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
                 {
@@ -455,6 +457,10 @@ namespace Gamekit2D
 
             m_Animator.SetBool(m_HashGroundedPara, grounded);
 
+			if (grounded) {
+				PlayerInput.Instance.EnableDashing();
+			}
+
             return grounded;
         }
 
@@ -541,6 +547,11 @@ namespace Gamekit2D
                 m_MoveVector.y -= jumpAbortSpeedReduction * Time.deltaTime;
             }
         }
+
+		//public void UpdateDash()
+		//{
+		//	if (PlayerInput)
+		//}
 
         public void AirborneHorizontalMovement()
         {
@@ -744,6 +755,27 @@ namespace Gamekit2D
         {
             return PlayerInput.Instance.MeleeAttack.Down;
         }
+
+		public bool CheckForDashInput()
+		{
+			//if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dashing")) return false;
+			bool dashing = PlayerInput.Instance.Dash.Down;
+			//print("Dashing: " + dashing);
+			if (dashing) {
+				m_Animator.SetTrigger(m_HashDashingPara);
+			}
+			return dashing;
+		}
+
+		public void Dash(bool useInput, float speedScale = 1f)
+		{
+			float desiredSpeed = useInput ? PlayerInput.Instance.Horizontal.Value * maxSpeed * speedScale : 0f;
+			float acceleration = useInput && PlayerInput.Instance.Horizontal.ReceivingInput ? groundAcceleration : groundDeceleration;
+			desiredSpeed *= 5f;
+			acceleration *= 100f;
+			m_MoveVector.x = Mathf.MoveTowards(m_MoveVector.x, desiredSpeed, acceleration * Time.deltaTime);
+			PlayerInput.Instance.DisableDashing();
+		}
 
         public void MeleeAttack()
         {
