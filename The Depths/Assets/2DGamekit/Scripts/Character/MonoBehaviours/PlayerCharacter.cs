@@ -192,6 +192,8 @@ namespace Gamekit2D
 
         void Update()
         {
+            bool wallSliding = false;
+
             if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
@@ -226,11 +228,8 @@ namespace Gamekit2D
                 {
                     m_MoveVector.y = -wallSlideSpeedMax;
                 }
-            } else
-            {
-                bool wallSliding = false;
-            }
-            if (Input.GetKeyDown(KeyCode.Space))
+            } 
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if (wallSliding)
                 {
