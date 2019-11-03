@@ -813,21 +813,22 @@ namespace Gamekit2D
 
 		public bool CheckForDashInput()
 		{
+			print("UWUWUWU");
 			//if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dashing")) return false;
 			bool dashing = PlayerInput.Instance.Dash.Down;
 			//print("Dashing: " + dashing);
-			if (dashing) {
-				m_Animator.SetTrigger(m_HashDashingPara);
-			}
 			return dashing;
 		}
 
 		public void Dash(bool useInput, float speedScale = 1f)
 		{
+			if (Mathf.Abs(m_MoveVector.x) < 0.01f) return;
+
+			m_Animator.SetTrigger(m_HashDashingPara);
 			float desiredSpeed = useInput ? PlayerInput.Instance.Horizontal.Value * maxSpeed * speedScale : 0f;
 			float acceleration = useInput && PlayerInput.Instance.Horizontal.ReceivingInput ? groundAcceleration : groundDeceleration;
-			desiredSpeed *= 5f;
-			acceleration *= 100f;
+			desiredSpeed *= 2.5f;
+			acceleration *= 50f;
 			m_MoveVector.x = Mathf.MoveTowards(m_MoveVector.x, desiredSpeed, acceleration * Time.deltaTime);
 			PlayerInput.Instance.DisableDashing();
 		}

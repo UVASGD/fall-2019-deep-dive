@@ -1,0 +1,3103 @@
+fileFormatVersion: 2
+guid: ac6bb9e6d8288bf4d8186140032a7dcc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6394615786679752188
+    second: Tileset_Rock_Cave_0
+  - first:
+      213: 8700656451753347183
+    second: Tileset_Rock_Cave_1
+  - first:
+      213: -544696431473954267
+    second: Tileset_Rock_Cave_2
+  - first:
+      213: -7788450855292655623
+    second: Tileset_Rock_Cave_3
+  - first:
+      213: 8933731954399919842
+    second: Tileset_Rock_Cave_4
+  - first:
+      213: -6016460769429902257
+    second: Tileset_Rock_Cave_5
+  - first:
+      213: -637504880596455126
+    second: Tileset_Rock_Cave_6
+  - first:
+      213: 4919676152741021953
+    second: Tileset_Rock_Cave_7
+  - first:
+      213: -1951252167610259244
+    second: Tileset_Rock_Cave_8
+  - first:
+      213: -46831675115903873
+    second: Tileset_Rock_Cave_9
+  - first:
+      213: 4935723913180035857
+    second: Tileset_Rock_Cave_10
+  - first:
+      213: 3233355857470799891
+    second: Tileset_Rock_Cave_11
+  - first:
+      213: 5535754286663502327
+    second: Tileset_Rock_Cave_12
+  - first:
+      213: -8255504959327538674
+    second: Tileset_Rock_Cave_13
+  - first:
+      213: 7586414891711313803
+    second: Tileset_Rock_Cave_14
+  - first:
+      213: -7878129186008568145
+    second: Tileset_Rock_Cave_15
+  - first:
+      213: 8976470136050526619
+    second: Tileset_Rock_Cave_16
+  - first:
+      213: -6395507947189277055
+    second: Tileset_Rock_Cave_17
+  - first:
+      213: 8563785624212461719
+    second: Tileset_Rock_Cave_18
+  - first:
+      213: -8928572459849943971
+    second: Tileset_Rock_Cave_19
+  - first:
+      213: -6367153832806077704
+    second: Tileset_Rock_Cave_20
+  - first:
+      213: -8877486317695432122
+    second: Tileset_Rock_Cave_21
+  - first:
+      213: -4207176768097581385
+    second: Tileset_Rock_Cave_22
+  - first:
+      213: -1510368046635637142
+    second: Tileset_Rock_Cave_23
+  - first:
+      213: -4402897634801448345
+    second: Tileset_Rock_Cave_24
+  - first:
+      213: -8605004373324910092
+    second: Tileset_Rock_Cave_25
+  - first:
+      213: -8847638557000784495
+    second: Tileset_Rock_Cave_26
+  - first:
+      213: -4928300218046729646
+    second: Tileset_Rock_Cave_27
+  - first:
+      213: -1019486051945529011
+    second: Tileset_Rock_Cave_28
+  - first:
+      213: 4629698341388255699
+    second: Tileset_Rock_Cave_29
+  - first:
+      213: 4645439539953680300
+    second: Tileset_Rock_Cave_30
+  - first:
+      213: 2177663416903576109
+    second: Tileset_Rock_Cave_31
+  - first:
+      213: -2975790494685814656
+    second: Tileset_Rock_Cave_32
+  - first:
+      213: 6483968665857446395
+    second: Tileset_Rock_Cave_33
+  - first:
+      213: -2923854098737867107
+    second: Tileset_Rock_Cave_34
+  - first:
+      213: -721441656933703061
+    second: Tileset_Rock_Cave_35
+  - first:
+      213: 8915779845840711815
+    second: Tileset_Rock_Cave_36
+  - first:
+      213: 6589151404807908673
+    second: Tileset_Rock_Cave_37
+  - first:
+      213: -6960658395240528252
+    second: Tileset_Rock_Cave_38
+  - first:
+      213: 4582462947566299504
+    second: Tileset_Rock_Cave_39
+  - first:
+      213: -2959224470232430997
+    second: Tileset_Rock_Cave_40
+  - first:
+      213: -3869000137222158057
+    second: Tileset_Rock_Cave_41
+  - first:
+      213: -4966151965282793532
+    second: Tileset_Rock_Cave_42
+  - first:
+      213: -8639078064019986004
+    second: Tileset_Rock_Cave_43
+  - first:
+      213: -6757072273158461169
+    second: Tileset_Rock_Cave_44
+  - first:
+      213: 4380025541050749753
+    second: Tileset_Rock_Cave_45
+  - first:
+      213: -5277168316895666441
+    second: Tileset_Rock_Cave_46
+  - first:
+      213: -9187249144613914974
+    second: Tileset_Rock_Cave_47
+  - first:
+      213: 3405433460427914861
+    second: Tileset_Rock_Cave_48
+  - first:
+      213: -6006784083304754327
+    second: Tileset_Rock_Cave_49
+  - first:
+      213: 4501166604350209314
+    second: Tileset_Rock_Cave_50
+  - first:
+      213: 3140659958580038569
+    second: Tileset_Rock_Cave_51
+  - first:
+      213: 8410755423773857573
+    second: Tileset_Rock_Cave_52
+  - first:
+      213: -3509562559606915106
+    second: Tileset_Rock_Cave_53
+  - first:
+      213: 9089878011452084377
+    second: Tileset_Rock_Cave_54
+  - first:
+      213: 8097952848517972837
+    second: Tileset_Rock_Cave_55
+  - first:
+      213: -6236945990435615684
+    second: Tileset_Rock_Cave_56
+  - first:
+      213: -1189065281499329437
+    second: Tileset_Rock_Cave_57
+  - first:
+      213: -9135334625099438263
+    second: Tileset_Rock_Cave_58
+  - first:
+      213: -8154381224014202955
+    second: Tileset_Rock_Cave_59
+  - first:
+      213: 5318799941186646038
+    second: Tileset_Rock_Cave_60
+  - first:
+      213: -3552793039334487129
+    second: Tileset_Rock_Cave_61
+  - first:
+      213: 8523474251354373032
+    second: Tileset_Rock_Cave_62
+  - first:
+      213: 5386729570187114095
+    second: Tileset_Rock_Cave_63
+  - first:
+      213: -3232091442981540120
+    second: Tileset_Rock_Cave_64
+  - first:
+      213: 5699558185156086060
+    second: Tileset_Rock_Cave_65
+  - first:
+      213: 5307667752700770958
+    second: Tileset_Rock_Cave_66
+  - first:
+      213: -7345288886762887187
+    second: Tileset_Rock_Cave_67
+  - first:
+      213: -7426795646136638912
+    second: Tileset_Rock_Cave_68
+  - first:
+      213: 204800908876700108
+    second: Tileset_Rock_Cave_69
+  - first:
+      213: 9209158947596853250
+    second: Tileset_Rock_Cave_70
+  - first:
+      213: 998112274439584060
+    second: Tileset_Rock_Cave_71
+  - first:
+      213: -7952298400760326807
+    second: Tileset_Rock_Cave_72
+  - first:
+      213: 1836993873060835963
+    second: Tileset_Rock_Cave_73
+  - first:
+      213: -2967313245559223723
+    second: Tileset_Rock_Cave_74
+  - first:
+      213: -487476153526021211
+    second: Tileset_Rock_Cave_75
+  - first:
+      213: -5264616629569534518
+    second: Tileset_Rock_Cave_76
+  - first:
+      213: 883957523297829642
+    second: Tileset_Rock_Cave_77
+  - first:
+      213: 1138150789941770559
+    second: Tileset_Rock_Cave_78
+  - first:
+      213: -5321263862387527278
+    second: Tileset_Rock_Cave_79
+  - first:
+      213: -8500508682669363958
+    second: Tileset_Rock_Cave_80
+  - first:
+      213: -6242511629785851403
+    second: Tileset_Rock_Cave_81
+  - first:
+      213: -323283342963435092
+    second: Tileset_Rock_Cave_82
+  - first:
+      213: 7971287484869736332
+    second: Tileset_Rock_Cave_83
+  - first:
+      213: 1361572411299605792
+    second: Tileset_Rock_Cave_84
+  - first:
+      213: -3322413886122382771
+    second: Tileset_Rock_Cave_85
+  - first:
+      213: 138599471063691560
+    second: Tileset_Rock_Cave_86
+  - first:
+      213: 7251547002683849682
+    second: Tileset_Rock_Cave_87
+  - first:
+      213: -5703945415238138076
+    second: Tileset_Rock_Cave_88
+  - first:
+      213: 7872376901264504227
+    second: Tileset_Rock_Cave_89
+  - first:
+      213: -5354363740593033641
+    second: Tileset_Rock_Cave_90
+  - first:
+      213: -7980984134105902078
+    second: Tileset_Rock_Cave_91
+  - first:
+      213: 5817715122774758112
+    second: Tileset_Rock_Cave_92
+  - first:
+      213: -3120301915345789697
+    second: Tileset_Rock_Cave_93
+  - first:
+      213: -3122435425136329532
+    second: Tileset_Rock_Cave_94
+  - first:
+      213: -2334083865830649741
+    second: Tileset_Rock_Cave_95
+  - first:
+      213: -204789540348801012
+    second: Tileset_Rock_Cave_96
+  - first:
+      213: -3985121966289871788
+    second: Tileset_Rock_Cave_97
+  - first:
+      213: -719626936641304908
+    second: Tileset_Rock_Cave_98
+  - first:
+      213: -505203814424792422
+    second: Tileset_Rock_Cave_99
+  - first:
+      213: -1769854953838370549
+    second: Tileset_Rock_Cave_100
+  - first:
+      213: 3987451891358560339
+    second: Tileset_Rock_Cave_101
+  - first:
+      213: -6535105728806915562
+    second: Tileset_Rock_Cave_102
+  - first:
+      213: -4564387793990133051
+    second: Tileset_Rock_Cave_103
+  - first:
+      213: 5981155952744974797
+    second: Tileset_Rock_Cave_104
+  - first:
+      213: 3996769038813423543
+    second: Tileset_Rock_Cave_105
+  - first:
+      213: -6938014026242924890
+    second: Tileset_Rock_Cave_106
+  - first:
+      213: 9082382395918588712
+    second: Tileset_Rock_Cave_107
+  - first:
+      213: 3728052663990538665
+    second: Tileset_Rock_Cave_108
+  - first:
+      213: 478374556196989073
+    second: Tileset_Rock_Cave_109
+  - first:
+      213: 2602557774168463544
+    second: Tileset_Rock_Cave_110
+  - first:
+      213: -3129741767292856786
+    second: Tileset_Rock_Cave_111
+  - first:
+      213: 5531253377170547692
+    second: Tileset_Rock_Cave_112
+  - first:
+      213: 6314591791837625795
+    second: Tileset_Rock_Cave_113
+  - first:
+      213: 6017661241227819388
+    second: Tileset_Rock_Cave_114
+  - first:
+      213: -8016605843196902623
+    second: Tileset_Rock_Cave_115
+  - first:
+      213: -5573991681727924629
+    second: Tileset_Rock_Cave_116
+  - first:
+      213: 3090123259677529286
+    second: Tileset_Rock_Cave_117
+  - first:
+      213: -2004248856351014821
+    second: Tileset_Rock_Cave_118
+  - first:
+      213: -2303960708781837019
+    second: Tileset_Rock_Cave_119
+  - first:
+      213: -9001319259031340127
+    second: Tileset_Rock_Cave_120
+  - first:
+      213: -3854046312236346856
+    second: Tileset_Rock_Cave_121
+  - first:
+      213: -4442645197782210094
+    second: Tileset_Rock_Cave_122
+  - first:
+      213: -923394409321776641
+    second: Tileset_Rock_Cave_123
+  - first:
+      213: -788568326514492957
+    second: Tileset_Rock_Cave_124
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f40715a2b9107a479055d60751ade99
+      internalID: -6394615786679752188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cf5a9914bd49442afd2bbf28b37407
+      internalID: 8700656451753347183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2396659f77eb24cb6ed3b4f987c2e8
+      internalID: -544696431473954267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51081f3c28e54f4f8d8d2aeaa1b1056
+      internalID: -7788450855292655623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3a961428c80ca4387ff943685993c4
+      internalID: 8933731954399919842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b4bc2370276844f8a8776acb7d30d7
+      internalID: -6016460769429902257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ef44a3e55265e4a86c1533765b4d04
+      internalID: -637504880596455126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_7
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c218f46bf807acb4992feb8ff50fb80e
+      internalID: 4919676152741021953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f330272bb8268da42ba651897d178887
+      internalID: -1951252167610259244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_9
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c34d2ca964d6247a34984620f09b18
+      internalID: -46831675115903873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_10
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46170ecb4b62a4c4ea0988ec241f16d7
+      internalID: 4935723913180035857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67b9b4e4fde37b4aaeeebe3bb4800cf
+      internalID: 3233355857470799891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_12
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcc96d1118ff0642808a62d063d479e
+      internalID: 5535754286663502327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2744f3aedface2c4ebab278ef91de474
+      internalID: -8255504959327538674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b724c29e9e8f0d43b4cd690be544a09
+      internalID: 7586414891711313803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b73bbb40b4469e4b96207433a1d90de
+      internalID: -7878129186008568145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_16
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beb49f66cc23584abd99c0a5d1e5474
+      internalID: 8976470136050526619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a7215aa724ec9418fed677c432bfca
+      internalID: -6395507947189277055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_18
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6667f23840b774ebb0c4b4c96c28b6
+      internalID: 8563785624212461719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62969b5c21c1017429bac419a99f427f
+      internalID: -8928572459849943971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_20
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1058406074ead3249a9f05b075601b30
+      internalID: -6367153832806077704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4987e4ab0ef428d4d8ffa2b2221d14c9
+      internalID: -8877486317695432122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb605ba758ec6b1478610ead28c57c76
+      internalID: -4207176768097581385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e39faa3679d1e1408cd0600dd8c0357
+      internalID: -1510368046635637142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_24
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcf567d7f19a51489e8fdded045c7f7
+      internalID: -4402897634801448345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc19fdc9a6dc417468f5e50e3b64e1a3
+      internalID: -8605004373324910092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaa6f03e57747945ac96921b3b1777a
+      internalID: -8847638557000784495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_27
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee740fb569d65634a87e3432dcb0fab1
+      internalID: -4928300218046729646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_28
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45281287e27fb3499b661fbfbe885a5
+      internalID: -1019486051945529011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_29
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f736e4a1a79944e834610f30654e1d
+      internalID: 4629698341388255699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_30
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce03f5c29b8707a4f99a46bb5b3771a6
+      internalID: 4645439539953680300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_31
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40807db83b3fe94f9408c7a773319fd
+      internalID: 2177663416903576109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_32
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ee0d466d6d459419d10bcdd6bb6ec0
+      internalID: -2975790494685814656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77c84434597a794c87cea38035e0c9f
+      internalID: 6483968665857446395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_34
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088854b6a89e94345b42c3378d580a75
+      internalID: -2923854098737867107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54efa7be9576fe458bfda79d60f8841
+      internalID: -721441656933703061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_36
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acc5efa34d0e1d44ad4133f1f50898e
+      internalID: 8915779845840711815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_37
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4faf88ca963eeb4b9f1308c06413be4
+      internalID: 6589151404807908673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_38
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb0831045822a2449dc00924ece6ae8
+      internalID: -6960658395240528252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_39
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cdfe917a8cac9478277f08f64bb77a
+      internalID: 4582462947566299504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_40
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e0c9619da1d1046ad7041dc8644ce4
+      internalID: -2959224470232430997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_41
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d1cb5dbd5938a4a86b8e14f21741b0
+      internalID: -3869000137222158057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_42
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fe750d382880940b8c731d65e8d82e
+      internalID: -4966151965282793532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_43
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 3000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d2472117578f247a085b8bf3ba19c3
+      internalID: -8639078064019986004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9cf9d7ed1c3d54fa3f60463d3a408d
+      internalID: -6757072273158461169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_45
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82064682c103d2f498748083801f164b
+      internalID: 4380025541050749753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81037ade9903ab44ebfc65b101d9a215
+      internalID: -5277168316895666441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_47
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feebeee2af3d9ca4e8c09feb29c7d691
+      internalID: -9187249144613914974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_48
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcf3ed2197bb314d98c1751ca34d664
+      internalID: 3405433460427914861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_49
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324c29bf74e070f4eb984962e0d3d5e3
+      internalID: -6006784083304754327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_50
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e563e0b1fd64c4e91562752f14640a
+      internalID: 4501166604350209314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_51
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556e760ec00c74d4c94750f7f688cfbd
+      internalID: 3140659958580038569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_52
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9723f64893318c489492635f1b7b31f
+      internalID: 8410755423773857573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_53
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c07b3d94c412364cb51ad3bc94e731f
+      internalID: -3509562559606915106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_54
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03bbf9b65c73ca245b2da4636373a361
+      internalID: 9089878011452084377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1827ca8a5d1b2194d9ae5e1a1b6ad901
+      internalID: 8097952848517972837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_56
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d529427c90cdf4e883f4473791f9c0
+      internalID: -6236945990435615684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_57
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c907eab49c0b2442be6336aeec859ac
+      internalID: -1189065281499329437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_58
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7c3dfaf1028d4886180b5f1c7f6e1
+      internalID: -9135334625099438263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_59
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bed9463e7d2b74c82374cab35db0eb
+      internalID: -8154381224014202955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_60
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb5e381e31798942995263e33eabbc5
+      internalID: 5318799941186646038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_61
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9200ebbcdc92a4644922cc5c4e5dfed7
+      internalID: -3552793039334487129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_62
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523190182b0592c4c8eafb59aadde8d9
+      internalID: 8523474251354373032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_63
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec83015a1f5aef48ab54b0e764fee53
+      internalID: 5386729570187114095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_64
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1714f27d8debc934cbede1329b6479a5
+      internalID: -3232091442981540120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab43af3c7437a14d83a688963fb6b1c
+      internalID: 5699558185156086060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_66
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f898f2543be5c824e8236c611690a7cf
+      internalID: 5307667752700770958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_67
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ebfd5411ae9114b8f4a2d1e51ac9a9
+      internalID: -7345288886762887187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_68
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efbe39edc3a9cc4b9cf0795683105c4
+      internalID: -7426795646136638912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_69
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473aea267ed000d438222942392fbb94
+      internalID: 204800908876700108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_70
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a2e0cfef8d05141b8617111557522a
+      internalID: 9209158947596853250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_71
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c0f238c41a51043afac037a84362ba
+      internalID: 998112274439584060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_72
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d887eebaec6c30c45812ca46b1a4fe00
+      internalID: -7952298400760326807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_73
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fd7d20510ec8342b079c90508e97bb
+      internalID: 1836993873060835963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_74
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d9ba94e29b14246aca8cd49b24faa8
+      internalID: -2967313245559223723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_75
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52137154500f8b64b8c0aabf4b18e093
+      internalID: -487476153526021211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f072712100959f43994f17a5b97686f
+      internalID: -5264616629569534518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_77
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f21c73b65f54ce40842e3a86613949f
+      internalID: 883957523297829642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_78
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1357b3bc0cbae84da3dede091d449e2
+      internalID: 1138150789941770559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_79
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3c72f4ff63453449582321b6badf14
+      internalID: -5321263862387527278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbdf7ff8ff78b945b5db846e51d3dab
+      internalID: -8500508682669363958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_81
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5303c10cf7154364f97678cc900f6327
+      internalID: -6242511629785851403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_82
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038af1a4256e7c148aa69780184ac1f6
+      internalID: -323283342963435092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_83
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b954954dce17f2a47a5637419ed671dd
+      internalID: 7971287484869736332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_84
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84a371a5f363d147b9919e37383eedb
+      internalID: 1361572411299605792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_85
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd188d2d49f509449be929aed427d838
+      internalID: -3322413886122382771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_86
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6846a2de7b259d64c8cdaacd33965946
+      internalID: 138599471063691560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_87
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 2000
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6bd1932c015b84390c996001c5505a
+      internalID: 7251547002683849682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ee8e610d005e341840e203b5994e7d
+      internalID: -5703945415238138076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_89
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867dc4274c1957141bcf0d355235291d
+      internalID: 7872376901264504227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_90
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03548d9e18571f94ca442c6bd0d74d08
+      internalID: -5354363740593033641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_91
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02856ade7140417499a581dfe9972d90
+      internalID: -7980984134105902078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_92
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a0eac34ff20d44a9b9d7760a41c3e5
+      internalID: 5817715122774758112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_93
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf11a4b321ea88478bf3876eb7b3e4a
+      internalID: -3120301915345789697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_94
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a87bd3b6afcdf48b43826bb25b81c6
+      internalID: -3122435425136329532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_95
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d3f1efb89dcf0418d5949d6652d739
+      internalID: -2334083865830649741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_96
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed59f7422b239e4ebd894cc8ad52d33
+      internalID: -204789540348801012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_97
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91be6e03cdcfdf44b8968b2d2b8319df
+      internalID: -3985121966289871788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_98
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b3abf10c4f20349bcea5e9266ad798
+      internalID: -719626936641304908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cdf21fb19b52a4f8749b9158578ef2
+      internalID: -505203814424792422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_100
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c0becc3fb85d49b228cd6fac5da52
+      internalID: -1769854953838370549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_101
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6805738ee39832d468a8f4e514132262
+      internalID: 3987451891358560339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_102
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c33deec19b379468ea95f368d6400a
+      internalID: -6535105728806915562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_103
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98a4f28299b87b438490f0e022f1a81
+      internalID: -4564387793990133051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_104
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0229f356f1ea74baba70a9d832cde6
+      internalID: 5981155952744974797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_105
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dffdf93579d584fadcceba958655dd
+      internalID: 3996769038813423543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_106
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7e409dfed85cb48a9f51ca437a4ab2
+      internalID: -6938014026242924890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_107
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49876b3a42e6e65459a417347a9249c3
+      internalID: 9082382395918588712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_108
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7d1ba3fa80e7341832f404b1d10b2e
+      internalID: 3728052663990538665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3786b6f4b4cd6ad4ca1786ffb3093d29
+      internalID: 478374556196989073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_110
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633876e6dcc9e544d9b20bcb8d5fcbe7
+      internalID: 2602557774168463544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_111
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2ed0e430ee0d743ad1e5f2f39f6b55
+      internalID: -3129741767292856786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_112
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b858e42cc00555478a72430639e1884
+      internalID: 5531253377170547692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_113
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ab08aedb942264da7d83ae9914b250
+      internalID: 6314591791837625795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_114
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec665f4d817514a42b5e7bb605f63fcb
+      internalID: 6017661241227819388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_115
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408a63cd635fa2e459d7868dfd0418f7
+      internalID: -8016605843196902623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_116
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10482844c51c7774ebbdf98fab167d18
+      internalID: -5573991681727924629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_117
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf6160ba310a4b4896318c1d9d32d89
+      internalID: 3090123259677529286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47a686411e975148ab9d9a3e108d885
+      internalID: -2004248856351014821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_119
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a33bfbe86117584ca6969a1315dff26
+      internalID: -2303960708781837019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_120
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d22ea8a1a09b0044b12d32c64a1356b
+      internalID: -9001319259031340127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_121
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1785dfc855a2b345bcec17f092a6192
+      internalID: -3854046312236346856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_122
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3948f9d4ed1f64c4187604b8eed387ce
+      internalID: -4442645197782210094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_123
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f30f91568c5e3d4fa9ed491288f4bc0
+      internalID: -923394409321776641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Rock_Cave_124
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f853e6a27297a41866f0193d74c12c
+      internalID: -788568326514492957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
