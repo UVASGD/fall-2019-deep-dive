@@ -26,7 +26,11 @@ namespace Gamekit2D
         SerializedProperty m_GravityProp;
         SerializedProperty m_JumpSpeedProp;
         SerializedProperty m_JumpAbortSpeedReductionProp;
-    
+        SerializedProperty m_wallSlideSpeedMax;
+        SerializedProperty m_wallJumpClimb;
+        SerializedProperty m_wallJumpOff;
+        SerializedProperty m_wallLeap;
+
         SerializedProperty m_HurtJumpAngleProp;
         SerializedProperty m_HurtJumpSpeedProp;
         SerializedProperty m_FlickeringDurationProp;
@@ -82,6 +86,10 @@ namespace Gamekit2D
         readonly GUIContent m_GravityContent = new GUIContent("Gravity");
         readonly GUIContent m_JumpSpeedContent = new GUIContent("Jump Speed");
         readonly GUIContent m_JumpAbortSpeedReductionContent = new GUIContent("Jump Abort Speed Reduction");
+        readonly GUIContent m_wallSlideSpeedMaxContent = new GUIContent("Wall Slide Speed");
+        readonly GUIContent m_wallJumpClimbContent = new GUIContent("Wall Climb Jump Height");
+        readonly GUIContent m_wallJumpOffContent = new GUIContent("Wall Hop Off Height");
+        readonly GUIContent m_wallLeapContent = new GUIContent("Wall Leap Off Height");
 
         readonly GUIContent m_HurtJumpAngleContent = new GUIContent("Hurt Jump Angle");
         readonly GUIContent m_HurtJumpSpeedContent = new GUIContent("Hurt Jump Speed");
@@ -140,6 +148,10 @@ namespace Gamekit2D
             m_GravityProp = serializedObject.FindProperty("gravity");
             m_JumpSpeedProp = serializedObject.FindProperty("jumpSpeed");
             m_JumpAbortSpeedReductionProp = serializedObject.FindProperty("jumpAbortSpeedReduction");
+            m_wallSlideSpeedMax = serializedObject.FindProperty("wallSlideSpeedMax");
+            m_wallJumpClimb = serializedObject.FindProperty("wallJumpClimb");
+            m_wallJumpOff = serializedObject.FindProperty("wallJumpOff");
+            m_wallLeap = serializedObject.FindProperty("wallLeap");
 
             m_HurtJumpAngleProp = serializedObject.FindProperty("hurtJumpAngle");
             m_HurtJumpSpeedProp = serializedObject.FindProperty("hurtJumpSpeed");
@@ -220,6 +232,10 @@ namespace Gamekit2D
                 EditorGUILayout.PropertyField(m_GravityProp, m_GravityContent);
                 EditorGUILayout.PropertyField(m_JumpSpeedProp, m_JumpSpeedContent);
                 EditorGUILayout.PropertyField(m_JumpAbortSpeedReductionProp, m_JumpAbortSpeedReductionContent);
+                EditorGUILayout.PropertyField(m_wallSlideSpeedMax, m_wallSlideSpeedMaxContent);
+                EditorGUILayout.PropertyField(m_wallJumpClimb, m_wallJumpClimbContent);
+                EditorGUILayout.PropertyField(m_wallJumpOff, m_wallJumpOffContent);
+                EditorGUILayout.PropertyField(m_wallLeap, m_wallLeapContent);
             }
 
             EditorGUI.indentLevel--;

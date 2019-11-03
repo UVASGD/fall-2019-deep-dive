@@ -18,6 +18,8 @@ namespace Gamekit2D
             get { return m_InventoryController; }
         }
 
+        public bool WallSliding { get => wallSliding; set => wallSliding = value; }
+
         public SpriteRenderer spriteRenderer;
         public Damageable damageable;
         public Damager meleeDamager;
@@ -36,6 +38,11 @@ namespace Gamekit2D
         public float gravity = 50f;
         public float jumpSpeed = 20f;
         public float jumpAbortSpeedReduction = 100f;
+        public float wallSlideSpeedMax = 3;
+        public int wallDirX;
+        public Vector2 wallJumpClimb = new Vector2(10, 10);
+        public Vector2 wallJumpOff = new Vector2(0, 0);
+        public Vector2 wallLeap = new Vector2(0, 0);
 
         [Range(k_MinHurtJumpAngle, k_MaxHurtJumpAngle)] public float hurtJumpAngle = 45f;
         public float hurtJumpSpeed = 5f;
@@ -89,6 +96,7 @@ namespace Gamekit2D
         protected InventoryController m_InventoryController;
 
         protected bool m_crouch_pushed;
+        public bool wallSliding;
 
         protected Checkpoint m_LastCheckpoint = null;
         protected Vector2 m_StartingPosition = Vector2.zero;
@@ -115,6 +123,7 @@ namespace Gamekit2D
         protected const float k_MaxHurtJumpAngle = 89.999f;
         protected const float k_GroundedStickingVelocityMultiplier = 3f;    // This is to help the character stick to vertically moving platforms.
 
+
         //used in non alloc version of physic function
         protected ContactPoint2D[] m_ContactsBuffer = new ContactPoint2D[16];
 
@@ -130,7 +139,7 @@ namespace Gamekit2D
             m_InventoryController = GetComponent<InventoryController>();
 
             m_CurrentBulletSpawnPoint = spriteOriginallyFacesLeft ? facingLeftBulletSpawnPoint : facingRightBulletSpawnPoint;
-        }
+    }
 
         void Start()
         {
@@ -183,7 +192,7 @@ namespace Gamekit2D
 
         void Update()
         {
-			if (PlayerInput.Instance.Pause.Down)
+            if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
                 {
@@ -201,7 +210,53 @@ namespace Gamekit2D
                     Unpause();
                 }
             }
+            
+            if ((checkCollisions(m_Capsule, Vector2.left, 0.1f) || checkCollisions(m_Capsule, Vector2.right, 0.1f)) && !checkCollisions(m_Capsule, Vector2.down, 0.1f))
+            {
+                if (checkCollisions(m_Capsule, Vector2.left, 0.1f))
+                {
+                    wallDirX = -1;
+                } else
+                {
+                    wallDirX = 1;
+                }
+
+                wallSliding = true;
+                if (m_CharacterController2D.Velocity.y < -wallSlideSpeedMax)
+                {
+                    m_MoveVector.y = -wallSlideSpeedMax;
+                }
+            } else
+            {
+                bool wallSliding = false;
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (wallSliding)
+                {
+                    if (wallDirX == Input.GetAxis("Horizontal"))
+                    {
+                        m_MoveVector.x = -wallDirX * wallJumpClimb.x;
+                        m_MoveVector.y = wallJumpClimb.y;
+                    }
+                    else if (Input.GetAxis("Horizontal") == 0)
+                    {
+                        m_MoveVector.x = -wallDirX * wallJumpOff.x;
+                        m_MoveVector.y = wallJumpOff.y;
+                    }
+                    else
+                    {
+                        m_MoveVector.x = -wallDirX * wallLeap.x;
+                        m_MoveVector.y = wallJumpOff.y;
+                    }
+                }
+            }
         }
+
+  
+        
+            
+        
 
         void FixedUpdate()
         { 
@@ -807,6 +862,27 @@ namespace Gamekit2D
             footstepPosition.z -= 1;
             VFXController.Instance.Trigger("DustPuff", footstepPosition, 0, false, null, m_CurrentSurface);
         }
+
+        public bool checkCollisions(Collider2D moveCollider, Vector2 direction, float distance)
+        {
+            if (moveCollider != null)
+            {
+                RaycastHit2D[] hits = new RaycastHit2D[10];
+                ContactFilter2D filter = new ContactFilter2D() { };
+
+                int numbHits = moveCollider.Cast(direction, filter, hits, distance);
+
+                for (int i = 0; i < numbHits; i++)
+                {
+                    if (!hits[i].collider.isTrigger)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
 
         public void Respawn(bool resetHealth, bool useCheckpoint)
         {
