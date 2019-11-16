@@ -28,6 +28,8 @@ namespace Gamekit2D
         public BulletPool bulletPool;
         public Transform cameraFollowTarget;
 
+        public float xp = 0f;
+
         public float maxSpeed = 10f;
         public float groundAcceleration = 100f;
         public float groundDeceleration = 100f;
@@ -97,6 +99,8 @@ namespace Gamekit2D
 
         protected bool m_crouch_pushed;
         public bool wallSliding;
+        public bool wallJumped;
+        public int lastWallDir;
 
         protected Checkpoint m_LastCheckpoint = null;
         protected Vector2 m_StartingPosition = Vector2.zero;
@@ -143,6 +147,8 @@ namespace Gamekit2D
 
         void Start()
         {
+            lastWallDir = 0;
+            wallDirX = 0;
             hurtJumpAngle = Mathf.Clamp(hurtJumpAngle, k_MinHurtJumpAngle, k_MaxHurtJumpAngle);
             m_TanHurtJumpAngle = Mathf.Tan(Mathf.Deg2Rad * hurtJumpAngle);
             m_FlickeringWait = new WaitForSeconds(flickeringDuration);
@@ -192,8 +198,11 @@ namespace Gamekit2D
 
         void Update()
         {
-            bool wallSliding = false;
-
+            wallSliding = false;
+            if (lastWallDir != wallDirX || CheckForGrounded())
+            {
+                wallJumped = false;
+            }
             if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
@@ -217,8 +226,8 @@ namespace Gamekit2D
             {
                 if (checkCollisions(m_Capsule, Vector2.left, 0.1f))
                 {
-                    wallDirX = -1;
-                } else
+                    wallDirX = -1;                }
+                else
                 {
                     wallDirX = 1;
                 }
@@ -231,23 +240,27 @@ namespace Gamekit2D
             } 
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (wallSliding)
+                if (wallSliding && !wallJumped && xp >= 50) 
                 {
                     if (wallDirX == Input.GetAxis("Horizontal"))
                     {
                         m_MoveVector.x = -wallDirX * wallJumpClimb.x;
                         m_MoveVector.y = wallJumpClimb.y;
+                        lastWallDir = wallDirX;
+                        wallJumped = true;
                     }
-                    else if (Input.GetAxis("Horizontal") == 0)
+                    else //(Input.GetAxis("Horizontal") == 0)
                     {
                         m_MoveVector.x = -wallDirX * wallJumpOff.x;
                         m_MoveVector.y = wallJumpOff.y;
+                        lastWallDir = wallDirX;
+                        wallJumped = true;
                     }
-                    else
+                /*    else
                     {
                         m_MoveVector.x = -wallDirX * wallLeap.x;
                         m_MoveVector.y = wallJumpOff.y;
-                    }
+                    } */
                 }
             }
         }
@@ -688,7 +701,7 @@ namespace Gamekit2D
         {
             bool holdingGun = false;
 
-            if (PlayerInput.Instance.RangedAttack.Held)
+            if (PlayerInput.Instance.RangedAttack.Held && xp >= 50f)
             {
                 holdingGun = true;
                 m_Animator.SetBool(m_HashHoldingGunPara, true);
@@ -709,17 +722,18 @@ namespace Gamekit2D
 
         public void CheckAndFireGun()
         {
-            if (PlayerInput.Instance.RangedAttack.Held && m_Animator.GetBool(m_HashHoldingGunPara))
-            {
-                if (m_ShootingCoroutine == null)
-                    m_ShootingCoroutine = StartCoroutine(Shoot());
-            }
+                if (PlayerInput.Instance.RangedAttack.Held && m_Animator.GetBool(m_HashHoldingGunPara))
+                {
+                    if (m_ShootingCoroutine == null)
+                        m_ShootingCoroutine = StartCoroutine(Shoot());
+                }
 
-            if ((PlayerInput.Instance.RangedAttack.Up || !m_Animator.GetBool(m_HashHoldingGunPara)) && m_ShootingCoroutine != null)
-            {
-                StopCoroutine(m_ShootingCoroutine);
-                m_ShootingCoroutine = null;
-            }
+                if ((PlayerInput.Instance.RangedAttack.Up || !m_Animator.GetBool(m_HashHoldingGunPara)) && m_ShootingCoroutine != null)
+                {
+                    StopCoroutine(m_ShootingCoroutine);
+                    m_ShootingCoroutine = null;
+                }
+           
         }
 
         public void ForceNotHoldingGun()
@@ -821,7 +835,7 @@ namespace Gamekit2D
 
 		public void Dash(bool useInput, float speedScale = 1f)
 		{
-			if (Mathf.Abs(m_MoveVector.x) < 0.01f) return;
+			if (Mathf.Abs(m_MoveVector.x) < 0.01f || xp < 50) return;
 
 			m_Animator.SetTrigger(m_HashDashingPara);
 			float desiredSpeed = useInput ? PlayerInput.Instance.Horizontal.Value * maxSpeed * speedScale : 0f;
