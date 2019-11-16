@@ -826,7 +826,6 @@ namespace Gamekit2D
 
 		public bool CheckForDashInput()
 		{
-			print("UWUWUWU");
 			//if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dashing")) return false;
 			bool dashing = PlayerInput.Instance.Dash.Down;
 			//print("Dashing: " + dashing);
