@@ -28,7 +28,8 @@ namespace Gamekit2D
         public BulletPool bulletPool;
         public Transform cameraFollowTarget;
 
-        public float xp = 0f;
+        LevelXP levels;
+        public int currentLevel;
 
         public float maxSpeed = 10f;
         public float groundAcceleration = 100f;
@@ -147,8 +148,10 @@ namespace Gamekit2D
 
         void Start()
         {
+            levels = GameObject.Find("XP_Canvas 1").GetComponent<LevelXP>();
             lastWallDir = 0;
             wallDirX = 0;
+            currentLevel = levels.getLevel();
             hurtJumpAngle = Mathf.Clamp(hurtJumpAngle, k_MinHurtJumpAngle, k_MaxHurtJumpAngle);
             m_TanHurtJumpAngle = Mathf.Tan(Mathf.Deg2Rad * hurtJumpAngle);
             m_FlickeringWait = new WaitForSeconds(flickeringDuration);
@@ -198,6 +201,7 @@ namespace Gamekit2D
 
         void Update()
         {
+            currentLevel = levels.getLevel();
             wallSliding = false;
             if (lastWallDir != wallDirX || CheckForGrounded())
             {
@@ -240,7 +244,7 @@ namespace Gamekit2D
             } 
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (wallSliding && !wallJumped && xp >= 50) 
+                if (wallSliding && !wallJumped && currentLevel >= 2) 
                 {
                     if (wallDirX == Input.GetAxis("Horizontal"))
                     {
@@ -701,7 +705,7 @@ namespace Gamekit2D
         {
             bool holdingGun = false;
 
-            if (PlayerInput.Instance.RangedAttack.Held && xp >= 50f)
+            if (PlayerInput.Instance.RangedAttack.Held && currentLevel >= 2)
             {
                 holdingGun = true;
                 m_Animator.SetBool(m_HashHoldingGunPara, true);
@@ -834,8 +838,7 @@ namespace Gamekit2D
 
 		public void Dash(bool useInput, float speedScale = 1f)
 		{
-			if (Mathf.Abs(m_MoveVector.x) < 0.01f || xp < 50) return;
-
+			if (Mathf.Abs(m_MoveVector.x) < 0.01f || currentLevel < 2) return;
 			m_Animator.SetTrigger(m_HashDashingPara);
 			float desiredSpeed = useInput ? PlayerInput.Instance.Horizontal.Value * maxSpeed * speedScale : 0f;
 			float acceleration = useInput && PlayerInput.Instance.Horizontal.ReceivingInput ? groundAcceleration : groundDeceleration;

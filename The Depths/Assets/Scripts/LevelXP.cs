@@ -53,6 +53,11 @@ public class LevelXP : ExpandingBarUI
         return xpToNextLevel;
     }
 
+    public int getLevel()
+    {
+        return currentLevel;
+    }
+
     void UpdateHitPointUI()
     {
         levelText.text = "Level " + currentLevel.ToString("0");

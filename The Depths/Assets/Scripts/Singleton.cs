@@ -14,6 +14,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     /// <summary>
     /// Access singleton instance through this propriety.
     /// </summary>
+    /// 
     public static T Instance
     {
         get
