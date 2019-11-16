@@ -185,6 +185,7 @@ MonoBehaviour:
   dieAudio: {fileID: 114378202263870322}
   footStepAudio: {fileID: 0}
   flickeringDuration: 0.2
+  xpGivenOnDeath: 30
 --- !u!95 &95484841071781558
 Animator:
   serializedVersion: 3

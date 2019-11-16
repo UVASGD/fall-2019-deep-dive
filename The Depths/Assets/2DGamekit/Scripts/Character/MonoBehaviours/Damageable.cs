@@ -22,7 +22,7 @@ namespace Gamekit2D
         public bool invulnerableAfterDamage = true;
         public float invulnerabilityDuration = 3f;
         public bool disableOnDeath = false;
-        [Tooltip("An offset from the obejct position used to set from where the distance to the damager is computed")]
+        [Tooltip("An offset from the object position used to set from where the distance to the damager is computed")]
         public Vector2 centreOffset = new Vector2(0f, 1f);
         public HealthEvent OnHealthSet;
         public DamageEvent OnTakeDamage;

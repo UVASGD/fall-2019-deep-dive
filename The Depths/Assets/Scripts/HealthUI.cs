@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 /*
 namespace Gamekit2D
@@ -41,7 +42,7 @@ namespace Gamekit2D
 */
 
 // Healthbar using 2D Gamekit Template (buggy)
-namespace Gamekit2D
+/*namespace Gamekit2D
 {
     public class HealthUI : MonoBehaviour
     {
@@ -54,7 +55,7 @@ namespace Gamekit2D
         protected readonly int m_HashInactiveState = Animator.StringToHash("Inactive");
         protected const float k_HeartIconAnchorWidth = 0.041f;
         // hp per heart
-        protected int hpPerHeart = 20;
+        public int hpPerHeart = 20;
 
         IEnumerator Start()
         {
@@ -97,6 +98,26 @@ namespace Gamekit2D
                 //I also just kinda added a thing here
                 m_HealthIconAnimators[i].SetBool(m_HashActivePara, damageable.CurrentHealth / hpPerHeart >= i + 1);
             }
+        }
+    }
+}*/
+
+namespace Gamekit2D
+{
+    public class HealthUI : ExpandingBarUI
+    {
+        public Damageable representedDamageable;
+        public Text hpText;
+
+        public void Start()
+        {
+            UpdateHitPointUI(representedDamageable);
+        }
+
+        public void UpdateHitPointUI (Damageable damageable)
+        {
+            hpText.text = damageable.CurrentHealth + "/" + damageable.startingHealth + " HP";
+            UpdateBarUI(damageable.startingHealth, damageable.CurrentHealth);
         }
     }
 }

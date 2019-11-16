@@ -60,6 +60,7 @@ namespace Gamekit2D
         [Header("Misc")]
         [Tooltip("Time in seconds during which the enemy flicker after being hit")]
         public float flickeringDuration;
+        public int xpGivenOnDeath;
 
         protected SpriteRenderer m_SpriteRenderer;
         protected CharacterController2D m_CharacterController2D;
@@ -461,6 +462,8 @@ namespace Gamekit2D
             m_Collider.enabled = false;
 
             CameraShaker.Shake(0.15f, 0.3f);
+
+            GameManager.Instance.xp.XpGain(xpGivenOnDeath);
         }
 
         public void Hit(Damager damager, Damageable damageable)
