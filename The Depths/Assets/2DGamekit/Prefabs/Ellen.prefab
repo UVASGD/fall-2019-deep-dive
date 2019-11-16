@@ -388,6 +388,7 @@ MonoBehaviour:
   facingRightBulletSpawnPoint: {fileID: 4929711121330312}
   bulletPool: {fileID: 114680495344679792}
   cameraFollowTarget: {fileID: 4530920980854552}
+  xp: 0
   maxSpeed: 7
   groundAcceleration: 100
   groundDeceleration: 100
@@ -400,12 +401,12 @@ MonoBehaviour:
   wallSlideSpeedMax: 3
   wallDirX: 0
   wallJumpClimb: {x: 10, y: 10}
-  wallJumpOff: {x: 0, y: 0}
-  wallLeap: {x: 0, y: 0}
+  wallJumpOff: {x: 25, y: 10}
+  wallLeap: {x: 25, y: 10}
   hurtJumpAngle: 45
   hurtJumpSpeed: 8
   flickeringDuration: 0.05
-  meleeAttackDashSpeed: 15
+  meleeAttackDashSpeed: 0
   dashWhileAirborne: 0
   footstepAudioPlayer: {fileID: 114293955134965878}
   landingAudioPlayer: {fileID: 114437884384235768}
@@ -424,6 +425,8 @@ MonoBehaviour:
   verticalCameraOffsetDelay: 1
   spriteOriginallyFacesLeft: 0
   wallSliding: 0
+  wallJumped: 0
+  lastWallDir: 0
 --- !u!114 &114774311958850474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,17 +458,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 0}
-        m_MethodName: ChangeHitPointUI
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   OnTakeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -1781,6 +1773,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4212235226361802}
     m_Modifications:
+    - target: {fileID: 1974393944470824, guid: 2d2745d2a8668e644a921a4848c9bc90, type: 3}
+      propertyPath: m_Name
+      value: HealthCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 224750044673408476, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1901,10 +1897,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1974393944470824, guid: 2d2745d2a8668e644a921a4848c9bc90, type: 3}
-      propertyPath: m_Name
-      value: HealthCanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 114157640717073608, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
       propertyPath: representedDamageable
@@ -1932,16 +1924,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
-        type: 3}
       propertyPath: m_Color.g
       value: 1
       objectReference: {fileID: 0}
@@ -1949,6 +1931,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
