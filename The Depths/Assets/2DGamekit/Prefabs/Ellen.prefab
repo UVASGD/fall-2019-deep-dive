@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 114621962236214084}
   m_Layer: 13
   m_Name: Ellen
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   facingRightBulletSpawnPoint: {fileID: 4929711121330312}
   bulletPool: {fileID: 114680495344679792}
   cameraFollowTarget: {fileID: 4530920980854552}
-  xp: 0
+  currentLevel: 0
   maxSpeed: 7
   groundAcceleration: 100
   groundDeceleration: 100
@@ -1917,11 +1917,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 3117364157953169023, guid: 2d2745d2a8668e644a921a4848c9bc90,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
       propertyPath: m_Color.g
@@ -1941,6 +1936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117364157953169023, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2745d2a8668e644a921a4848c9bc90, type: 3}
