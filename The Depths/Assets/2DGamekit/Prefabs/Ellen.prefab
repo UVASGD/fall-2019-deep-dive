@@ -1771,10 +1771,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4212235226361802}
     m_Modifications:
-    - target: {fileID: 1974393944470824, guid: 2d2745d2a8668e644a921a4848c9bc90, type: 3}
-      propertyPath: m_Name
-      value: HealthCanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 224750044673408476, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1895,6 +1891,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1974393944470824, guid: 2d2745d2a8668e644a921a4848c9bc90, type: 3}
+      propertyPath: m_Name
+      value: HealthCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 114157640717073608, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
       propertyPath: representedDamageable
@@ -1903,6 +1903,46 @@ PrefabInstance:
     - target: {fileID: 114621085265115278, guid: 2d2745d2a8668e644a921a4848c9bc90,
         type: 3}
       propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111151358228420230, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6941785310162301254, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117364157953169023, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674171469905885851, guid: 2d2745d2a8668e644a921a4848c9bc90,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
