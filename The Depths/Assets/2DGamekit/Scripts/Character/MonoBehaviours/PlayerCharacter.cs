@@ -201,6 +201,10 @@ namespace Gamekit2D
 
         void Update()
         {
+            if (CheckForGrounded())
+            {
+                PlayerInput.Instance.EnableDoubleJump();
+            }
             currentLevel = levels.getLevel();
             wallSliding = false;
             if (lastWallDir != wallDirX || CheckForGrounded())
@@ -847,6 +851,15 @@ namespace Gamekit2D
 			m_MoveVector.x = Mathf.MoveTowards(m_MoveVector.x, desiredSpeed, acceleration * Time.deltaTime);
 			PlayerInput.Instance.DisableDashing();
 		}
+
+        public void DoubleJump()
+        { 
+            m_MoveVector.y = 30f;
+            //Couldn't find the regular grounded jump script
+            //30f is only an approximate value
+            //Can be further improved
+            PlayerInput.Instance.DisableDoubleJump();
+        }
 
         public void MeleeAttack()
         {

@@ -10,6 +10,11 @@ namespace Gamekit2D
         {
             m_MonoBehaviour.UpdateFacing();
             m_MonoBehaviour.UpdateJump();
+            if (m_MonoBehaviour.CheckForJumpInput())
+            {
+                m_MonoBehaviour.DoubleJump();
+            }
+
 			if (m_MonoBehaviour.CheckForDashInput()) {
 				m_MonoBehaviour.Dash(true);
 			} else {
