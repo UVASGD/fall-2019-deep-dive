@@ -121,6 +121,16 @@ namespace Gamekit2D
             RangedAttack.Enable();
         }
 
+        public void DisableDoubleJump()
+        {
+            Jump.Disable();   
+        }
+
+        public void EnableDoubleJump()
+        {
+            Jump.Enable();
+        }
+
 		public void DisableDashing()
 		{
 			Dash.Disable();
