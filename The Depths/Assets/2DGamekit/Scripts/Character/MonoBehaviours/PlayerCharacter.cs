@@ -18,6 +18,8 @@ namespace Gamekit2D
             get { return m_InventoryController; }
         }
 
+        public bool WallSliding { get => wallSliding; set => wallSliding = value; }
+
         public SpriteRenderer spriteRenderer;
         public Damageable damageable;
         public Damager meleeDamager;
@@ -25,6 +27,9 @@ namespace Gamekit2D
         public Transform facingRightBulletSpawnPoint;
         public BulletPool bulletPool;
         public Transform cameraFollowTarget;
+
+        LevelXP levels;
+        public int currentLevel;
 
         public float maxSpeed = 10f;
         public float groundAcceleration = 100f;
@@ -36,6 +41,11 @@ namespace Gamekit2D
         public float gravity = 50f;
         public float jumpSpeed = 20f;
         public float jumpAbortSpeedReduction = 100f;
+        public float wallSlideSpeedMax = 3;
+        public int wallDirX;
+        public Vector2 wallJumpClimb = new Vector2(10, 10);
+        public Vector2 wallJumpOff = new Vector2(0, 0);
+        public Vector2 wallLeap = new Vector2(0, 0);
 
         [Range(k_MinHurtJumpAngle, k_MaxHurtJumpAngle)] public float hurtJumpAngle = 45f;
         public float hurtJumpSpeed = 5f;
@@ -89,6 +99,9 @@ namespace Gamekit2D
         protected InventoryController m_InventoryController;
 
         protected bool m_crouch_pushed;
+        public bool wallSliding;
+        public bool wallJumped;
+        public int lastWallDir;
 
         protected Checkpoint m_LastCheckpoint = null;
         protected Vector2 m_StartingPosition = Vector2.zero;
@@ -99,8 +112,9 @@ namespace Gamekit2D
         protected readonly int m_HashHorizontalSpeedPara = Animator.StringToHash("HorizontalSpeed");
         protected readonly int m_HashVerticalSpeedPara = Animator.StringToHash("VerticalSpeed");
         protected readonly int m_HashGroundedPara = Animator.StringToHash("Grounded");
-        protected readonly int m_HashCrouchingPara = Animator.StringToHash("Crouching");
-        protected readonly int m_HashPushingPara = Animator.StringToHash("Pushing");
+		protected readonly int m_HashDashingPara = Animator.StringToHash("Dashing");
+		protected readonly int m_HashCrouchingPara = Animator.StringToHash("Crouching");
+		protected readonly int m_HashPushingPara = Animator.StringToHash("Pushing");
         protected readonly int m_HashTimeoutPara = Animator.StringToHash("Timeout");
         protected readonly int m_HashRespawnPara = Animator.StringToHash("Respawn");
         protected readonly int m_HashDeadPara = Animator.StringToHash("Dead");
@@ -108,10 +122,12 @@ namespace Gamekit2D
         protected readonly int m_HashForcedRespawnPara = Animator.StringToHash("ForcedRespawn");
         protected readonly int m_HashMeleeAttackPara = Animator.StringToHash("MeleeAttack");
         protected readonly int m_HashHoldingGunPara = Animator.StringToHash("HoldingGun");
+		
 
         protected const float k_MinHurtJumpAngle = 0.001f;
         protected const float k_MaxHurtJumpAngle = 89.999f;
         protected const float k_GroundedStickingVelocityMultiplier = 3f;    // This is to help the character stick to vertically moving platforms.
+
 
         //used in non alloc version of physic function
         protected ContactPoint2D[] m_ContactsBuffer = new ContactPoint2D[16];
@@ -128,10 +144,14 @@ namespace Gamekit2D
             m_InventoryController = GetComponent<InventoryController>();
 
             m_CurrentBulletSpawnPoint = spriteOriginallyFacesLeft ? facingLeftBulletSpawnPoint : facingRightBulletSpawnPoint;
-        }
+    }
 
         void Start()
         {
+            levels = GameObject.Find("XP_Canvas 1").GetComponent<LevelXP>();
+            lastWallDir = 0;
+            wallDirX = 0;
+            currentLevel = levels.getLevel();
             hurtJumpAngle = Mathf.Clamp(hurtJumpAngle, k_MinHurtJumpAngle, k_MaxHurtJumpAngle);
             m_TanHurtJumpAngle = Mathf.Tan(Mathf.Deg2Rad * hurtJumpAngle);
             m_FlickeringWait = new WaitForSeconds(flickeringDuration);
@@ -181,6 +201,12 @@ namespace Gamekit2D
 
         void Update()
         {
+            currentLevel = levels.getLevel();
+            wallSliding = false;
+            if (lastWallDir != wallDirX || CheckForGrounded())
+            {
+                wallJumped = false;
+            }
             if (PlayerInput.Instance.Pause.Down)
             {
                 if (!m_InPause)
@@ -199,7 +225,54 @@ namespace Gamekit2D
                     Unpause();
                 }
             }
+            
+            if ((checkCollisions(m_Capsule, Vector2.left, 0.1f) || checkCollisions(m_Capsule, Vector2.right, 0.1f)) && !checkCollisions(m_Capsule, Vector2.down, 0.1f))
+            {
+                if (checkCollisions(m_Capsule, Vector2.left, 0.1f))
+                {
+                    wallDirX = -1;                }
+                else
+                {
+                    wallDirX = 1;
+                }
+
+                wallSliding = true;
+                if (m_CharacterController2D.Velocity.y < -wallSlideSpeedMax)
+                {
+                    m_MoveVector.y = -wallSlideSpeedMax;
+                }
+            } 
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                if (wallSliding && !wallJumped && currentLevel >= 2) 
+                {
+                    if (wallDirX == Input.GetAxis("Horizontal"))
+                    {
+                        m_MoveVector.x = -wallDirX * wallJumpClimb.x;
+                        m_MoveVector.y = wallJumpClimb.y;
+                        lastWallDir = wallDirX;
+                        wallJumped = true;
+                    }
+                    else //(Input.GetAxis("Horizontal") == 0)
+                    {
+                        m_MoveVector.x = -wallDirX * wallJumpOff.x;
+                        m_MoveVector.y = wallJumpOff.y;
+                        lastWallDir = wallDirX;
+                        wallJumped = true;
+                    }
+                /*    else
+                    {
+                        m_MoveVector.x = -wallDirX * wallLeap.x;
+                        m_MoveVector.y = wallJumpOff.y;
+                    } */
+                }
+            }
         }
+
+  
+        
+            
+        
 
         void FixedUpdate()
         { 
@@ -455,6 +528,10 @@ namespace Gamekit2D
 
             m_Animator.SetBool(m_HashGroundedPara, grounded);
 
+			if (grounded) {
+				PlayerInput.Instance.EnableDashing();
+			}
+
             return grounded;
         }
 
@@ -542,6 +619,11 @@ namespace Gamekit2D
             }
         }
 
+		//public void UpdateDash()
+		//{
+		//	if (PlayerInput)
+		//}
+
         public void AirborneHorizontalMovement()
         {
             float desiredSpeed = PlayerInput.Instance.Horizontal.Value * maxSpeed;
@@ -623,7 +705,7 @@ namespace Gamekit2D
         {
             bool holdingGun = false;
 
-            if (PlayerInput.Instance.RangedAttack.Held)
+            if (PlayerInput.Instance.RangedAttack.Held && currentLevel >= 2)
             {
                 holdingGun = true;
                 m_Animator.SetBool(m_HashHoldingGunPara, true);
@@ -644,17 +726,18 @@ namespace Gamekit2D
 
         public void CheckAndFireGun()
         {
-            if (PlayerInput.Instance.RangedAttack.Held && m_Animator.GetBool(m_HashHoldingGunPara))
-            {
-                if (m_ShootingCoroutine == null)
-                    m_ShootingCoroutine = StartCoroutine(Shoot());
-            }
+                if (PlayerInput.Instance.RangedAttack.Held && m_Animator.GetBool(m_HashHoldingGunPara))
+                {
+                    if (m_ShootingCoroutine == null)
+                        m_ShootingCoroutine = StartCoroutine(Shoot());
+                }
 
-            if ((PlayerInput.Instance.RangedAttack.Up || !m_Animator.GetBool(m_HashHoldingGunPara)) && m_ShootingCoroutine != null)
-            {
-                StopCoroutine(m_ShootingCoroutine);
-                m_ShootingCoroutine = null;
-            }
+                if ((PlayerInput.Instance.RangedAttack.Up || !m_Animator.GetBool(m_HashHoldingGunPara)) && m_ShootingCoroutine != null)
+                {
+                    StopCoroutine(m_ShootingCoroutine);
+                    m_ShootingCoroutine = null;
+                }
+           
         }
 
         public void ForceNotHoldingGun()
@@ -745,6 +828,26 @@ namespace Gamekit2D
             return PlayerInput.Instance.MeleeAttack.Down;
         }
 
+		public bool CheckForDashInput()
+		{
+			//if (m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dashing")) return false;
+			bool dashing = PlayerInput.Instance.Dash.Down;
+			//print("Dashing: " + dashing);
+			return dashing;
+		}
+
+		public void Dash(bool useInput, float speedScale = 1f)
+		{
+			if (Mathf.Abs(m_MoveVector.x) < 0.01f || currentLevel < 2) return;
+			m_Animator.SetTrigger(m_HashDashingPara);
+			float desiredSpeed = useInput ? PlayerInput.Instance.Horizontal.Value * maxSpeed * speedScale : 0f;
+			float acceleration = useInput && PlayerInput.Instance.Horizontal.ReceivingInput ? groundAcceleration : groundDeceleration;
+			desiredSpeed *= 2.5f;
+			acceleration *= 50f;
+			m_MoveVector.x = Mathf.MoveTowards(m_MoveVector.x, desiredSpeed, acceleration * Time.deltaTime);
+			PlayerInput.Instance.DisableDashing();
+		}
+
         public void MeleeAttack()
         {
             m_Animator.SetTrigger(m_HashMeleeAttackPara);
@@ -775,6 +878,27 @@ namespace Gamekit2D
             footstepPosition.z -= 1;
             VFXController.Instance.Trigger("DustPuff", footstepPosition, 0, false, null, m_CurrentSurface);
         }
+
+        public bool checkCollisions(Collider2D moveCollider, Vector2 direction, float distance)
+        {
+            if (moveCollider != null)
+            {
+                RaycastHit2D[] hits = new RaycastHit2D[10];
+                ContactFilter2D filter = new ContactFilter2D() { };
+
+                int numbHits = moveCollider.Cast(direction, filter, hits, distance);
+
+                for (int i = 0; i < numbHits; i++)
+                {
+                    if (!hits[i].collider.isTrigger)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
 
         public void Respawn(bool resetHealth, bool useCheckpoint)
         {

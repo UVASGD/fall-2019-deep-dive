@@ -1056,6 +1056,7 @@ MonoBehaviour:
   dieAudio: {fileID: 114414923324972550}
   footStepAudio: {fileID: 114132390200130364}
   flickeringDuration: 0.02
+  xpGivenOnDeath: 20
 --- !u!114 &114412267516478162
 MonoBehaviour:
   m_ObjectHideFlags: 0

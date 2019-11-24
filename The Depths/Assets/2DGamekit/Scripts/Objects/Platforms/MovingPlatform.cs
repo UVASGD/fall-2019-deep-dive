@@ -190,6 +190,7 @@ namespace Gamekit2D
                 platformCatcher.MoveCaughtObjects (m_Velocity);
                 //We remove the distance we moved. That way if we didn't had enough distance to the next goal, we will do a new loop to finish
                 //the remaining distance we have to cover this frame toward the new goal
+                transform.position += new Vector3(m_Velocity.x, m_Velocity.y, 0);
                 distanceToGo -= dist;
 
                 // we have some wait time set, that mean we reach a point where we have to wait. So no need to continue to move the platform, early exit.
